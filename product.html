@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание и характеристики термокружки «Маршрут».">
+    <title>Термокружка «Маршрут» — Дом рядом</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light">
+<header>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" aria-label="Основная навигация">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand shop-navbar__brand" href="index.html">Дом рядом</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#shopNavbar" aria-controls="shopNavbar" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="shopNavbar">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="product.html" aria-current="page">Товар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Дополнительно</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+                            <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+                            <li><a class="dropdown-item" href="index.html#products">Популярное</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container my-5">
+    <nav aria-label="Хлебные крошки">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Термокружка «Маршрут»</li>
+        </ol>
+    </nav>
+
+    <div class="row g-4 align-items-start">
+        <div class="col-12 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="placeholder-image bg-white border rounded d-flex align-items-center justify-content-center">
+                    <span class="text-secondary">Изображение товара</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <span class="badge bg-success mb-3">Хит</span>
+            <h1 class="h2">Термокружка «Маршрут»</h1>
+            <p class="lead text-secondary">Сохраняет напиток тёплым в дороге и на прогулке. Лаконичный дизайн удобно брать с собой каждый день.</p>
+            <p class="fs-3 fw-bold">1 290 ₽</p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <a class="btn btn-primary btn-lg" href="order.html">Оформить заявку</a>
+                <a class="btn btn-outline-secondary btn-lg" href="catalog.html">Назад в каталог</a>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                Учебная карточка товара: характеристики приведены для демонстрации компонентов Bootstrap.
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-5" aria-labelledby="specs-heading">
+        <h2 class="h4 mb-3" id="specs-heading">Характеристики</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered align-middle bg-white">
+                <tbody>
+                    <tr><th scope="row">Категория</th><td>Товары для прогулок</td></tr>
+                    <tr><th scope="row">Цена</th><td>1 290 ₽</td></tr>
+                    <tr><th scope="row">Наличие</th><td>В наличии</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="mt-5" aria-labelledby="faq-heading">
+        <h2 class="h4 mb-3" id="faq-heading">Частые вопросы</h2>
+        <div class="accordion" id="productFaq">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqDelivery" aria-expanded="true" aria-controls="faqDelivery">Как оставить заявку?</button>
+                </h3>
+                <div id="faqDelivery" class="accordion-collapse collapse show" data-bs-parent="#productFaq">
+                    <div class="accordion-body">Нажмите «Оформить заявку» и заполните демонстрационную форму.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDemo" aria-expanded="false" aria-controls="faqDemo">Это настоящий интернет-магазин?</button>
+                </h3>
+                <div id="faqDemo" class="accordion-collapse collapse" data-bs-parent="#productFaq">
+                    <div class="accordion-body">Нет, это учебный проект. Заказы и платежи не обрабатываются.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="border-top bg-white py-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+        <a class="text-decoration-none" href="index.html">«Дом рядом»</a>
+        <span class="text-secondary">Учебный проект КР2</span>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
