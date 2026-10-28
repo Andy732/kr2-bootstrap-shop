@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Учебный интернет-магазин: каталог полезных товаров для дома и отдыха.">
+    <title>Дом рядом — учебный интернет-магазин</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" aria-label="Основная навигация">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand shop-navbar__brand" href="index.html">Дом рядом</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#shopNavbar"
+                aria-controls="shopNavbar"
+                aria-expanded="false"
+                aria-label="Открыть меню"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="shopNavbar">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Товары</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="container py-5">
+        <div class="shop-hero rounded-4 p-4 p-md-5">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-8">
+                    <p class="text-uppercase fw-semibold text-primary mb-2">Удобные вещи на каждый день</p>
+                    <h1 class="display-5 fw-bold">Учебный интернет-магазин «Дом рядом»</h1>
+                    <p class="lead mb-4">
+                        Товары для дома, прогулок и маленьких повседневных радостей.
+                        Выбирайте то, что делает привычные дела удобнее.
+                    </p>
+                    <a class="btn btn-primary btn-lg" href="#products">Смотреть товары</a>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <aside class="shop-highlight bg-white rounded-4 p-4 shadow-sm" aria-label="Предложение недели">
+                        <span class="badge text-bg-primary mb-3">Предложение недели</span>
+                        <h2 class="h4">Соберите свой набор</h2>
+                        <p class="mb-0 text-secondary">
+                            Выберите полезные мелочи для дома и отдыха в одном месте.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages" class="container py-4">
+        <div class="row mb-4">
+            <div class="col-12 col-lg-8">
+                <p class="text-uppercase fw-semibold text-primary mb-2">Наш подход</p>
+                <h2 class="display-6 fw-bold">Покупать должно быть просто</h2>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <article class="shop-feature h-100 rounded-4 bg-light p-4">
+                    <span class="shop-feature__number">01</span>
+                    <h3 class="h5 mt-3">Понятный выбор</h3>
+                    <p class="mb-0 text-secondary">Собрали нужные товары в одном небольшом каталоге.</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-4">
+                <article class="shop-feature h-100 rounded-4 bg-light p-4">
+                    <span class="shop-feature__number">02</span>
+                    <h3 class="h5 mt-3">Честная информация</h3>
+                    <p class="mb-0 text-secondary">У каждого товара есть краткое описание и цена.</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-4">
+                <article class="shop-feature h-100 rounded-4 bg-light p-4">
+                    <span class="shop-feature__number">03</span>
+                    <h3 class="h5 mt-3">Помощь с выбором</h3>
+                    <p class="mb-0 text-secondary">Оставьте заявку, если нужна консультация.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="container py-5">
+        <div class="row align-items-end g-3 mb-4">
+            <div class="col-12 col-md-8">
+                <p class="text-uppercase fw-semibold text-primary mb-2">Выбрали для вас</p>
+                <h2 class="display-6 fw-bold mb-0">Популярные товары</h2>
+            </div>
+            <div class="col-12 col-md-4 text-md-end">
+                <span class="text-secondary">Небольшие находки на каждый день</span>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="shop-product h-100 rounded-4 border bg-white p-4 shadow-sm">
+                    <span class="badge text-bg-success mb-3">Хит</span>
+                    <h3 class="h4">Термокружка «Маршрут»</h3>
+                    <p class="text-secondary">Сохраняет напиток тёплым в дороге и на прогулке.</p>
+                    <p class="shop-product__price mt-auto mb-0">1 290 ₽</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="shop-product h-100 rounded-4 border bg-white p-4 shadow-sm">
+                    <span class="badge text-bg-primary mb-3">Популярное</span>
+                    <h3 class="h4">Лампа «Тихий вечер»</h3>
+                    <p class="text-secondary">Мягкий свет для чтения, учёбы и отдыха дома.</p>
+                    <p class="shop-product__price mt-auto mb-0">2 490 ₽</p>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="shop-product h-100 rounded-4 border bg-white p-4 shadow-sm">
+                    <span class="badge text-bg-warning mb-3">Новинка</span>
+                    <h3 class="h4">Органайзер «Порядок»</h3>
+                    <p class="text-secondary">Помогает хранить небольшие вещи аккуратно и под рукой.</p>
+                    <p class="shop-product__price mt-auto mb-0">890 ₽</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="border-top bg-light py-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+        <span>«Дом рядом» — учебный проект</span>
+        <span class="text-secondary">Фронтенд и бэкенд разработка, 2026</span>
+    </div>
+</footer>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+></script>
+</body>
+</html>
